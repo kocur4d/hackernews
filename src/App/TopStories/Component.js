@@ -24,6 +24,7 @@ class TopStories extends Component {
         const stories = storiesIDs.map(id => axios.get(storyURI(id)))
         Promise.all(stories)
           .then(values => {
+            console.log(values)
             this.setState({
               fetching: false,
               stories: values.map(value => value.data),

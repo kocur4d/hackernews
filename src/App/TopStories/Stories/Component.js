@@ -1,12 +1,6 @@
 import React from 'react'
 
-const Story = ({
-  title
-}) => (
-  <div>
-    <p>{title}</p>
-  </div>
-)
+import Story from './Story'
 
 const Stories = ({
   stories
