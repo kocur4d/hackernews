@@ -3,9 +3,9 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import store from './store.js'
 
-import './index.css'
+import App from './App'
 
-const App = () => <h1>Up and running</h1>
+import './index.css'
 
 const target = document.querySelector('#root')
 
