@@ -12,7 +12,7 @@ const Story = ({
 }) => (
   <Wrapper>
     <ExternalLink href={url}>{title}</ExternalLink>
-    <InternalLink to={`/comments/${id}`}>{kids.length} comments</InternalLink>
+    <InternalLink to={`/comment/${id}`}>{kids.length} comments</InternalLink>
   </Wrapper>
 )
 

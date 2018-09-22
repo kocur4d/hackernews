@@ -23,4 +23,3 @@ export default (api) =>({
   api: HACKER_NEWS_API_URL + storiesApi(api),
   responseHandler: responseHandler(api),
 })
-
