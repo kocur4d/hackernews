@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux-immutable'
 
-const changeMeReducer = (state = true, action) => state
+import storiesReducer from './reducers/stories.js'
+import endlessLoaderReducer from './reducers/endlessLoader.js'
 
 export default combineReducers({
-  test: changeMeReducer
+  stories: storiesReducer,
+  endlessLoader: endlessLoaderReducer,
 })

@@ -1,20 +1,17 @@
 import React from 'react'
 
-const Story = ({
-  title
-}) => (
-  <div>
-    <p>{title}</p>
-  </div>
-)
+import Story from './Story'
+import EndlessLoader from './EndlessLoader'
 
 const Stories = ({
-  stories
+  name,
+  stories,
 }) => (
   <div>
     {
       stories.map(story => <Story key={story.id} {...story}/>)
     }
+    <EndlessLoader name={name} fetchOnClick={true}/>
   </div>
 )
 
