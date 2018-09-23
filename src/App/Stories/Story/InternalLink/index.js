@@ -5,7 +5,10 @@ export default styled(Link)`
   width: 150px;
   padding: 5px 0;
   display: inline;
-  background: red;
-  text-align: center;
   text-decoration: none;
+  font-style: italic;
+  color: #7f8c8d;
+  :hover {
+    text-decoration: underline;
+  }
 `

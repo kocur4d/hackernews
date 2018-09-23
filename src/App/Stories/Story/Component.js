@@ -3,6 +3,7 @@ import React from 'react'
 import Wrapper from './Wrapper'
 import ExternalLink from './ExternalLink'
 import InternalLink from './InternalLink'
+import NoKidsLabel from './NoKidsLabel'
 
 const Story = ({
   id,
@@ -12,7 +13,11 @@ const Story = ({
 }) => (
   <Wrapper>
     <ExternalLink href={url}>{title}</ExternalLink>
-    <InternalLink to={`/comments/${id}`}>{kids.length} comments</InternalLink>
+    {
+      kids.length > 0
+      ? <InternalLink to={`/comment/${id}`}>{kids.length} comments</InternalLink>
+      : <NoKidsLabel>0 comments</NoKidsLabel>
+    }
   </Wrapper>
 )
 

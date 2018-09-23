@@ -5,7 +5,7 @@ const generateState = () =>  ['topstories', 'newstories', 'beststories'].reduce(
     isFetching: true,
     data: [],
     currentPage: 0,
-    perPage: 2,
+    perPage: 10,
   }
   return acc
 }, {})
