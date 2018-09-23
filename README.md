@@ -2,6 +2,7 @@
 ```
 git clone git@github.com:kocur4d/hackernews.git
 cd hackernews
+yarn install
 yarn start
 ```
 
