@@ -1,6 +1,7 @@
 body {
-  margin: 0 10px;
+  margin: 0 10px 50px 10px;
   padding: 0;
   font-family: sans-serif;
-  background: #EBF0F0;
+  background: #ecf0f1;
+  font-family: 'Source Sans Pro', sans-serif;
 }

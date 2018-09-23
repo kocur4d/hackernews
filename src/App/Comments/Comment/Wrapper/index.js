@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
-export default styled.section`
+const Wrapper = styled.section`
   padding: 20px;
-  background: white;
-  margin: 5px 0;
+  background: ${({odd}) => odd ? 'white' : '#ecf0f1'};
+  margin: 10px 0;
 `
+
+export default Wrapper

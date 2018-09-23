@@ -1,4 +1,7 @@
 import styled from 'styled-components'
 
-export default styled.p`
+const Body = styled.p`
+  margin: 0;
 `
+
+export default Body

@@ -4,7 +4,7 @@ import Wrapper from './Wrapper'
 import Author from './Author'
 import Time from './Time'
 
-const Comment = ({
+const Header = ({
   by,
   time,
   text,
@@ -15,5 +15,4 @@ const Comment = ({
   </Wrapper>
 )
 
-export default Comment
-
+export default Header

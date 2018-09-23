@@ -4,10 +4,11 @@ import Comment from './Comment'
 
 const Comments = ({
   comments,
+  odd = true,
 }) => (
   <div>
     {
-      comments.map(comment => <Comment key={comment.id} {...comment}/>)
+      comments.map(comment => <Comment key={comment.id} {...comment} odd={odd}/>)
     }
   </div>
 )
